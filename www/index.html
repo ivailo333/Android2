@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <meta name="color-scheme" content="light dark">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/index.css">
+        <title>Резервационна система</title>
+    </head>
+    <body>
+      <h1>Резервационна система за нощен клуб</h1>
+	  <div class="form">
+	    <table border="0" id="center">
+	     <tr>
+		 <td><label for="fname">Име:</label>&nbsp;</td>
+	     <td><input type="text" id="fname">&nbsp;</td>
+	     <td><label for="lname">Фамилия:</label>&nbsp;</td>
+	     <td><input type="text" id="lname">&nbsp;</td>
+		 </tr>
+	     <br /><br /><br />
+	     <tr>
+		 <td><label for="age">Възраст:</label>&nbsp;</td>
+	     <td><input type="text" id="age">&nbsp;</td>
+	     <td><label for="phone">GSM:</label>&nbsp;</td>
+	     <td><input type="text" id="phone">&nbsp;</td>
+		 </tr>
+		 <tr>
+		 <td><label for="night_club">Нощен клуб:</label>&nbsp;</td>
+		 <td>
+		 <select id="night_club">
+		    <option value="none">-----------</option>
+			<option value="Club Eleven">Club Eleven</option>
+			<option value="Club Illuzion">Club Illuzion</option>
+			<option value="Club 33">Club 33</option>
+			<option value="Plazza Dance Club">Plazza Dance Club</option>
+			<option value="Bedroom Premium Club">Bedroom Premium Club</option>
+			<option value="Biad Premium Club">Biad Premium Club</option>
+			<option value="Club Revue">Club Revue</option>
+			<option value="Provocateur Club">Provocateur Club</option>
+			<option value="Megami Club">Megami Club</option>
+			<option value="Club Eclipse">Club Eclipse</option>
+		 </select>
+		 </td>
+		 <td><label for="place">Място:</label>&nbsp;</td>
+		 <td>
+		 <select id="place">
+		    <option value="0">-------</option>
+		    <option value="маса 1">маса 1</option>
+			<option value="маса 2">маса 2</option>
+			<option value="маса 3">маса 3</option>
+			<option value="маса 4">маса 4</option>
+			<option value="маса 5">маса 5</option>
+			<option value="маса 6">маса 6</option>
+			<option value="маса 7">маса 7</option>
+			<option value="маса 8">маса 8</option>
+			<option value="маса 9">маса 9</option>
+			<option value="маса 10">маса 10</option>
+			<option value="маса 11">маса 11</option>
+			<option value="маса 12">маса 12</option>
+			<option value="маса 13">маса 13</option>
+			<option value="маса 14">маса 14</option>
+			<option value="маса 15">маса 15</option>
+			<option value="място на бара">място на бара</option>
+		 </select>
+		 </td>
+		 </tr>
+		 <tr>
+		 <td><label for="date">Дата:</label>&nbsp;</td>
+		 <td><input type="date" id="date_reserve" /></td>
+		 </tr>
+	    </table>
+		<br />
+		<input type="button" id="reserve" class="btn btn-primary" value="Резервирай">
+      </div>
+         <script src="cordova.js"></script>
+         <script src="js/index.js"></script>
+		 <script src="js/night_club.js"></script>
+		 <script src="js/bootstrap.min.js"></script>
+		 <script src="js/jquery-3.5.1.min.js"></script>
+    </body>
+</html>
